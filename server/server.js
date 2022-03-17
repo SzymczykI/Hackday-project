@@ -9,12 +9,7 @@ const PORT = 8000;
 const apiKey = process.env.KEY;
 
 const getDataById = async (id) => {
-    const result = await fetch(`https://ridb.recreation.gov/api/v1/recareas/${id}?full=true&apikey=${apiKey}`, {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-    })
+    const result = await fetch(`https://ridb.recreation.gov/api/v1/recareas/${id}?full=true&apikey=${apiKey}`)
     const json = await result.json();
     return json;
 }

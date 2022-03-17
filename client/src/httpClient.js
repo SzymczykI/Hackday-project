@@ -1,7 +1,9 @@
 import { properties } from './config'
 
 const fetchData = async (path) => {
-    fetch(`${properties.host}/api/${path}`).then(res => res.json())
+   const result = await fetch(`${properties.host}/api/${path}`);
+   const json = await result.json();
+   return json
 }
 
 export default fetchData;

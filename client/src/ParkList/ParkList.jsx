@@ -8,7 +8,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import dataForList from '../db.json';
 import Park from '../Park/Park';
 
-const ParkList = ({fetchData}) => {
+const ParkList = ({fetchData, card, display}) => {
   const [open, setOpen] = React.useState(true);
 
   const handleClick = (e) => {
@@ -16,12 +16,14 @@ const ParkList = ({fetchData}) => {
     setOpen(!open);
   };
   
-  const parks = dataForList.parks.map((item, index) => <Park key={index} name={item.name} id={item.id} fetchData={fetchData}/>)
+  const parks = dataForList.parks.map((item, index) => <Park key={index} name={item.name} id={item.id} fetchData={fetchData} 
+   display={display}/>)
 
 
   return (
     <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+    style={{maxHeight: '100%', overflow: 'auto', margin: 0}}
+      sx={{ width: '100%', overflow: 'auto', maxWidth: 360, bgcolor: 'background.paper' }}
       component="nav"
       aria-labelledby="nested-list"
     >
