@@ -1,3 +1,3 @@
 export const properties = {
-    host: 'https://localhost:8080'
+    host: 'https://localhost:8000'
 }
