@@ -1,8 +1,13 @@
 import React from 'react'
+import ParkList from './ParkList/ParkList'
 
-function App() {
+const App = () => {
+
+
   return (
-    <div>App</div>
+    <div>
+      <ParkList />
+    </div>
   )
 }
 

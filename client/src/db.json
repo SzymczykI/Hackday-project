@@ -1,0 +1,96 @@
+{
+  "parks": [
+    {
+      "id": "2988",
+      "name": "Yellowstone National Park"
+    },
+    {
+      "id": "2617",
+      "name": "Capitol Reef National Park"
+    },
+    {
+      "id": "2840",
+      "name": "New River Gorge National Park and Preserve"
+    },
+    {
+      "id": "2739",
+      "name": "Great Smoky Mountains National Park"
+    },
+    {
+      "id": "2733",
+      "name": "Grand Canyon National Park"
+    },
+    {
+      "id": "2907",
+      "name": "Rocky Mountain National Park"
+    },
+    {
+      "id": "2994",
+      "name": "Zion National Park"
+    },
+    {
+      "id": "2991",
+      "name": "Yosemite National Park"
+    },
+    {
+      "id": "2554",
+      "name": "Acadia National Park"
+    },
+    {
+      "id": "13525",
+      "name": "Grand Teton National Park"
+    },
+    {
+      "id": "2881",
+      "name": "Olympic National Park"
+    },
+    {
+      "id": "2725",
+      "name": "Glacier National Park"
+    },
+    {
+      "id": "2782",
+      "name": "Joshua Tree National Park"
+    },
+    {
+      "id": "2599",
+      "name": "Bryce Canyon National Park"
+    },
+    {
+      "id": "2652",
+      "name": "Cuyahoga Valley National Park"
+    },
+    {
+      "id": "13951",
+      "name": "Gateway Arch National Park"
+    },
+    {
+      "id": "2767",
+      "name": "Indiana Dunes National Park"
+    },
+    {
+      "id": "2662",
+      "name": "Death Valley National Park"
+    },
+    {
+      "id": "2573",
+      "name": "Arches National Park"
+    },
+    {
+      "id": "2835",
+      "name": "Mount Rainier National Park"
+    },
+    {
+      "id": "2760",
+      "name": "Hot Springs National Park"
+    },
+    {
+      "id": "2933",
+      "name": "Shenandoah National Park"
+    },
+    {
+      "id": "2760",
+      "name": "Hot Springs National Park"
+    }
+  ]
+}
