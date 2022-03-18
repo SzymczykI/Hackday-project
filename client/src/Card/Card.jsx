@@ -2,8 +2,12 @@ import React from 'react';
 import './Card.css'
 
 
-const Card = ({ card }) => {
+const Card = ({ card, myFavAdd }) => {
 
+  const addHandler = (e) => {
+    e.preventDefault();
+    myFavAdd(card.name, card.photo)
+  }
 
   return (
     <article>
@@ -13,11 +17,12 @@ const Card = ({ card }) => {
         <div className="text">
           <h1>{card.name}</h1>
           <p className="animate-text">{card.descr}</p>
-          <h2 className="animate-text">DIRECTIONS</h2>
+          <h2 className="animate-text">directions</h2>
           <p className="animate-text">{card.direct}</p>
           <div className='link'>
         <a className="animate-text" href={card.link} target='_blank' rel="noreferrer">OFFICIAL PAGE</a>
           </div>
+        <button className='animate_button' type='button' onClick={addHandler}><span>add to Favorites</span></button>
         </div>
       </div>
     </div>

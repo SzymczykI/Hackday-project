@@ -8,7 +8,7 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import dataForList from '../db.json';
 import Park from '../Park/Park';
 
-const ParkList = ({fetchData, card, display}) => {
+const ParkList = ({fetchData, display}) => {
   const [open, setOpen] = React.useState(true);
 
   const handleClick = (e) => {

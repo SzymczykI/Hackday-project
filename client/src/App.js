@@ -1,11 +1,19 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import fetchData from './httpClient'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './Homepage/Homepage'
 import Content from './Content/Content'
+import UseMyFavState from './hooks/useMyFavState';
+import MyFav from './MyFav/MyFav'
 
-function App() {
+const App = () => {
+  const initialFav = JSON.parse(localStorage.getItem("myFav") || '[]')
+  const { myFavs, myFavAdd, myFavRemove } = UseMyFavState(initialFav)
+
+useEffect(() => {
+  localStorage.setItem('myFav', JSON.stringify(myFavs))
+}, [myFavs])
 
   const [card, setCard] = useState('');
 
@@ -17,8 +25,9 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<Homepage />} />
-        <Route path='/parks' element={<Content fetchData={fetchData} display={cardDisplayHandler}  card={card} />} />
-        <Route path='/favourite' element={<Content />} />
+        <Route path='/parks' element={<Content fetchData={fetchData} display={cardDisplayHandler}  card={card} 
+        myFavs={myFavs} myFavAdd={myFavAdd} />} />
+        <Route path='/favourites' element={<MyFav myFavs={myFavs} myFavRemove={myFavRemove}/>} />
       </Routes>
     </div>
   )
