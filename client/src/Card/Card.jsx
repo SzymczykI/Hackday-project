@@ -1,6 +1,6 @@
 import React from 'react';
 import './Card.css'
-
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Card = ({ card, myFavAdd }) => {
 
@@ -22,7 +22,7 @@ const Card = ({ card, myFavAdd }) => {
           <div className='link'>
         <a className="animate-text" href={card.link} target='_blank' rel="noreferrer">OFFICIAL PAGE</a>
           </div>
-        <button className='animate_button' type='button' onClick={addHandler}><span>add to Favorites</span></button>
+        <FavoriteIcon sx={{ fontSize: 50, opacity: 0.7 }} onClick={addHandler}/>
         </div>
       </div>
     </div>

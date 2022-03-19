@@ -1,7 +1,7 @@
 .myFav__heeader {
   background-image:linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../photo/background_croped.jpg');
   height: 100vh;
-  max-height: 250px;
+  max-height: 200px;
   background-size: cover;
   display: flex;
   justify-content: center;

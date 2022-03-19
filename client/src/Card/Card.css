@@ -73,6 +73,11 @@
   transition-delay: 0.2s;
 }
 
+.tile button:hover {
+background-color: rgb(218, 224, 222);
+cursor:pointer;
+
+}
 .animate-text
 .animate_button {
   color: black;

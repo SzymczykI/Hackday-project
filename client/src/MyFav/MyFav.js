@@ -2,9 +2,10 @@ import React from 'react'
 import Favs from './Favs'
 import './MyFav.css'
 
-const myFav = ({ myFavs }) => {
+const myFav = ({ myFavs, myFavRemove }) => {
 
-  const favourites = myFavs.map((item, index) => <Favs  key={index} name={item.name} img={item.image}/>)
+  const favourites = myFavs.map((item, index) => <Favs  myFavs={myFavs} myFavRemove={myFavRemove} key={index} name={item.name} 
+  id={item.id} img={item.image}/>)
 
   return(
     <div>

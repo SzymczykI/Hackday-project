@@ -22,7 +22,7 @@ const ParkList = ({fetchData, display}) => {
 
   return (
     <List
-    style={{maxHeight: '100%', overflow: 'scroll', margin: 0}}
+    style={{maxHeight: '50%', overflow: 'auto', margin: 0}}
       sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
       component="nav"
       aria-labelledby="nested-list"

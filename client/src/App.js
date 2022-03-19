@@ -27,7 +27,7 @@ useEffect(() => {
         <Route path='/' element={<Homepage />} />
         <Route path='/parks' element={<Content fetchData={fetchData} display={cardDisplayHandler}  card={card} 
         myFavs={myFavs} myFavAdd={myFavAdd} />} />
-        <Route path='/favourites' element={<MyFav myFavs={myFavs} myFavRemove={myFavRemove}/>} />
+        <Route path='/favourites' element={<MyFav myFavRemove={myFavRemove} myFavs={myFavs}/>} />
       </Routes>
     </div>
   )

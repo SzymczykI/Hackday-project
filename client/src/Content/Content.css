@@ -24,3 +24,7 @@ span:hover {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
+
+button {
+  cursor:pointer;
+}
