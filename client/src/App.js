@@ -18,7 +18,7 @@ useEffect(() => {
   const [card, setCard] = useState('');
 
   const cardDisplayHandler = (id, name, descr, direct, lon, lat, link, photo, gallery) => {
-    setCard({ id: id, name: name, descr: descr, direct: direct, lon: lon, lat: lat, link: link, photo:photo, gallery: gallery })
+    setCard({ id, name, descr, direct, lon, lat, link, photo, gallery })
   }
 
   return (

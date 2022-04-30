@@ -3,7 +3,6 @@ import 'dotenv/config';
 import fetch from 'node-fetch'
 import cors from 'cors';
 
-
 const app = express();
 const PORT = 8000;
 const apiKey = process.env.KEY;
@@ -29,8 +28,6 @@ const dataExtractor = (obj) => {
     }
     return card
 }
-
-
 
 app.use(cors())
 
